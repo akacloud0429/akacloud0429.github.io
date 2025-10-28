@@ -6,8 +6,32 @@ output:
       toc_float: true
       theme: united
 ---
-
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
-Fun Facts about ME!
+# about me
+
+Welcome to my website! 
+
+My name is Luyun Ge, currently a first year MS Biostatistics student at Mailman School of Public Health. 
+
+Here is a picture of me:
+
+![](images/childhood_pic.jpg)
+# Education so far
+
+ To know about my brain, you can read my resume [here](resume.html).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

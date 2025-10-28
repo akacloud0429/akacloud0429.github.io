@@ -2,14 +2,18 @@ name: "Hola!"
 output_dir: "."
 navbar:
   title: "Luyun"
+  left:
+    - text: "Fun Facts about ME!"
+      href: about_me.html 
+    - text: "Resume"
+      href: resume.html 
   right:
-    - icon: fa-github  
-      href: https://github.com/akacloud0429
-    - icon: fa-envelope 
-      href: mailto:lg3450@cumc.columbia.edu
+    - icon: fa-github
+      href: https://github.com/akacloud0429 
+    - icon: fa-envelope
+      href: mailto:<lg3450@cumc.columbia.edu>
     - text: "LinkedIn"
-      href: https://www.linkedin.com/in/luyun-ge-4000b0240/
+      href: https://www.linkedin.com/in/luyun-ge-4000b0240/ 
 output:
   html_document:
     theme: united
-    highlight: textmate
