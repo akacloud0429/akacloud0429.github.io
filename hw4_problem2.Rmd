@@ -1,5 +1,16 @@
 ---
-title: "hw4_problem2"
+title: "NYC NOAA Weather Dashboard"
 output: html_document
 ---
+
+[Return to Homepage](index.html)
+
+first we load all necessary libraries
+```{r message=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+library(lubridate)
+```
 
