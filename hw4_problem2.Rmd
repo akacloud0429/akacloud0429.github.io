@@ -10,15 +10,46 @@ first we load all necessary libraries
 library(tidyverse)
 library(plotly)
 library(p8105.datasets)
+data(ny_noaa)
 ```
 
 # Problem2
+Create a flexdashboard using plotly for that includes at least three distinct plot types (e.g. scatterplots, line plots, bar plots, box plots, etc.). Use one of the following datasets, and load from the p8105.datasets package:
 
+```{r}
+ny_noaa_2002 =
+  ny_noaa |>
+  janitor::clean_names() |>
+  #only analysis data from year 2002 and drop missing data
+  mutate(date = ymd(date)) |>
+  filter(year(date) == 2002) |>
+  filter(!is.na(prcp) & !is.na(snow) & !is.na(snwd) & !is.na(tmax) & !is.na(tmin)) |>
+  mutate(across(c(prcp, snow, snwd, tmin, tmax), as.numeric),
+    #convert from tenths of units to standard units (mm and °C)
+    prcp = prcp / 10,
+    tmax = tmax / 10,
+    tmin = tmin / 10)
+```
+
+
+
+
+
+
+
+
+
+
+# Box Plot for 2002
 ```{r}
 
 ```
 
 
+# Bar Chart for 2002
+```{r}
+
+```
 
 
 

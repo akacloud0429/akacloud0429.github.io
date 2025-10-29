@@ -14,7 +14,7 @@ navbar:
     - icon: fa-github
       href: https://github.com/akacloud0429 
     - icon: fa-envelope
-      href: mailto:<lg3450@cumc.columbia.edu>
+      href: mailto:lg3450@cumc.columbia.edu
     - text: "LinkedIn"
       href: https://www.linkedin.com/in/luyun-ge-4000b0240/ 
 output:
