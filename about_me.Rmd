@@ -1,24 +1,45 @@
 ---
-title: "about_me"
-output: html_document
+output: 
+    html_document:
+      toc: true
+      toc_float: true
+      theme: united
 ---
 
-[Homepage](index.html)
+[Return to Homepage](index.html)
 
-More pictures loading...
+# Cautious! Glass Work
 
-# Cautious! Glass Work:
+Layering yellow, blue, and white leaves:
 
-Glass Flower with Yellow, Blue, and White Leaves:
 ![](images/glass_flower1.JPG)
 
-My friend made the beautiful flower, and I made the blue ice cube in the middle of the flower:
+Awesome flower petals by my friend, featuring my blue ice cube:
+
 ![](images/glass_flower2.JPG)
 
-And here's a Halloween Version of Ice Cube:
+A little spooky sparkle for the Halloween season:
 
 ![](images/ice_cube.jpg)
 
-# Beautiful pics:
+# Scenes from My Camera Roll
+
+I love capturing moments through photography. 
+I find energy and peace in the stillness of nature, its quiet and unchanging beauty. 
+Color also plays a huge part in what catches me.
+
+![](cameras/van1.JPG)
+
+
+![](cameras/van2.jpg)
+
+![](cameras/leaves.JPG)
+
+![](cameras/japan2.jpg)
+
+![](cameras/japan3.jpg)
+
+![](cameras/japan4.jpg)
+
 
 

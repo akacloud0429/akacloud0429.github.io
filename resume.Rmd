@@ -1,9 +1,8 @@
 ---
-title: "resume"
 output: html_document
 ---
 
-[Back to Homepage](index.html)
+[Return to Homepage](index.html)
 
 Proof I've done stuff (aka Resume) here.
 
