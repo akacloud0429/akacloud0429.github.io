@@ -4,3 +4,5 @@ output: html_document
 ---
 
 [Homepage](index.html)
+
+Warning! More pictures on the way...

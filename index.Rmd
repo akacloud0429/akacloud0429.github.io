@@ -1,5 +1,5 @@
 ---
-title: "Halo!"
+title: "Hola!"
 output: 
     html_document:
       toc: true
@@ -8,6 +8,7 @@ output:
 ---
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
+    
 # about me
 
 Welcome to my website! 
@@ -18,12 +19,25 @@ Here is a picture of me:
 
 ![](images/childhood_pic.jpg)
 
+
 # Education so far
 
 Want to see the paper trail of my brain's journey? My resume is located [here](resume.html).
 
+# Fun Things
 
+My hobbies are... numerous. Perhaps worryingly so😅. Lately, I've been dabbling in glass art (mostly trying not to melt my fingers off 🔥) and photography (subject matter: usually cats 🐈, sometimes landscapes).
 
+Behold! Proof I occasionally leave my computer. Here's some glass that hasn't shattered (yet) 
+![](images/persimmon_tree.jpg)
+
+and photos that aren't entirely blurry.
+
+![](images/victoria1.JPG)
+
+![](images/victoria3.JPG)
+
+Dare to see more questionable creations? Click [here](about_me.html)!
 
 
 
