@@ -7,6 +7,8 @@ navbar:
       href: about_me.html 
     - text: "Resume"
       href: resume.html 
+    - text: "Problem2"
+      href: hw4_problem2.html
   right:
     - icon: fa-github
       href: https://github.com/akacloud0429 
