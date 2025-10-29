@@ -1,5 +1,5 @@
 ---
-title: "NYC NOAA Weather Dashboard"
+title: "NY Weather Dashboard: April 2002"
 output: html_document
 ---
 
@@ -9,6 +9,7 @@ first we load all necessary libraries
 ```{r message=FALSE}
 library(tidyverse)
 library(plotly)
+library(lubridate)
 library(p8105.datasets)
 data(ny_noaa)
 ```
@@ -31,8 +32,9 @@ ny_noaa_2002_apr =
     tmin_c = tmin / 10)
 ```
 
-# Scatterplot of April 2002 
+
 ```{r}
+#create scatterplot of the relationship between snowfall and precipitation in April 2002
 ny_noaa_2002_apr |>
   mutate(
     text_label = str_c(
@@ -57,18 +59,28 @@ ny_noaa_2002_apr |>
   colorbar(title = "Snow Depth (mm)")
 ```
 
-
-
-
-
-
-
-
-# Box Plot for 2002
 ```{r}
-
+#Box Plot for showing max temperature distribution of 4 weeks in April 2002
+ny_noaa_2002_apr |>
+  mutate(
+    week_of_month = case_when(
+      day(date) <= 7  ~ "Week 1",
+      day(date) <= 14 ~ "Week 2",
+      day(date) <= 21 ~ "Week 3",
+      TRUE            ~ "Week 4"),
+    week_of_month = factor(week_of_month, 
+                           levels = c("Week 1", "Week 2", "Week 3", "Week 4"))) |>
+  plot_ly(
+    x = ~week_of_month, 
+    y = ~tmax_c, 
+    type = "box",
+    color = ~week_of_month) |>
+  layout(
+    title = "Distribution of Weekly Highest Temperatures in April 2002",
+    xaxis = list(title = "Week of April 2002"),
+    yaxis = list(title = "Max Temperature (°C)"),
+    showlegend = FALSE)
 ```
-
 
 # Bar Chart for 2002
 ```{r}
