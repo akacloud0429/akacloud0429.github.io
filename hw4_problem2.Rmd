@@ -17,21 +17,45 @@ data(ny_noaa)
 Create a flexdashboard using plotly for that includes at least three distinct plot types (e.g. scatterplots, line plots, bar plots, box plots, etc.). Use one of the following datasets, and load from the p8105.datasets package:
 
 ```{r}
-ny_noaa_2002 =
+ny_noaa_2002_apr =
   ny_noaa |>
   janitor::clean_names() |>
-  #only analysis data from year 2002 and drop missing data
+  #only analysis data from April 2002 and drop missing data
   mutate(date = ymd(date)) |>
-  filter(year(date) == 2002) |>
+  filter(year(date) == 2002 & month(date) == 04) |>
   filter(!is.na(prcp) & !is.na(snow) & !is.na(snwd) & !is.na(tmax) & !is.na(tmin)) |>
   mutate(across(c(prcp, snow, snwd, tmin, tmax), as.numeric),
     #convert from tenths of units to standard units (mm and °C)
-    prcp = prcp / 10,
-    tmax = tmax / 10,
-    tmin = tmin / 10)
+    prcp_mm = prcp / 10,
+    tmax_c = tmax / 10,
+    tmin_c = tmin / 10)
 ```
 
-
+# Scatterplot of April 2002 
+```{r}
+ny_noaa_2002_apr |>
+  mutate(
+    text_label = str_c(
+      "ID: ", id,
+      "\nDate: ", date, 
+      "\nPrecipitation (mm): ", prcp_mm,
+      "\nSnowfall (mm): ", snow,
+      "\nSnow Depth (mm): ", snwd)) |>
+  plot_ly(
+    x = ~prcp_mm, 
+    y = ~snow, 
+    color = ~snwd,
+    text = ~text_label,
+    hoverinfo = 'text',
+    type = "scatter", 
+    mode = "markers", 
+    alpha = 0.7) |>
+  layout(
+    title = "Snowfall vs. Precipitation (April 2002)",
+    xaxis = list(title = "Precipitation (mm)"),
+    yaxis = list(title = "Snowfall (mm)")) |>
+  colorbar(title = "Snow Depth (mm)")
+```
 
 
 
