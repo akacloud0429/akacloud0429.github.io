@@ -1,21 +1,20 @@
 ---
-title: "NY Weather Dashboard: April 2002"
-output: html_document
+title: "Problem2"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
 ---
 
-[Return to Homepage](index.html)
-
-first we load all necessary libraries
-```{r message=FALSE}
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(plotly)
 library(lubridate)
 library(p8105.datasets)
 data(ny_noaa)
 ```
-
-# Problem2
-Create a flexdashboard using plotly for that includes at least three distinct plot types (e.g. scatterplots, line plots, bar plots, box plots, etc.). Use one of the following datasets, and load from the p8105.datasets package:
 
 ```{r}
 ny_noaa_2002_apr =
@@ -32,9 +31,12 @@ ny_noaa_2002_apr =
     tmin_c = tmin / 10)
 ```
 
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### Chart A
 
 ```{r}
-#create scatterplot of the relationship between snowfall and precipitation in April 2002
 ny_noaa_2002_apr |>
   mutate(
     text_label = str_c(
@@ -53,11 +55,16 @@ ny_noaa_2002_apr |>
     mode = "markers", 
     alpha = 0.7) |>
   layout(
-    title = "Snowfall vs. Precipitation (April 2002)",
+    title = "Snowfall vs. Precipitation in April 2002",
     xaxis = list(title = "Precipitation (mm)"),
     yaxis = list(title = "Snowfall (mm)")) |>
   colorbar(title = "Snow Depth (mm)")
 ```
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 #Box Plot for showing max temperature distribution of 4 weeks in April 2002
@@ -82,6 +89,8 @@ ny_noaa_2002_apr |>
     showlegend = FALSE)
 ```
 
+### Chart C
+
 ```{r}
 # bar chart of daily average precipitation in April 2002
 daily_avg_prcp = 
@@ -102,9 +111,8 @@ daily_avg_prcp |>
     hovertemplate = "%{text}<extra></extra>",
     marker = list(color = ~avg_prcp, colorscale = "Cividis")) |>
   layout(
-    title = "Daily Average Precipitation (April 2002)",
+    title = "Daily Average Precipitation in April 2002",
     xaxis = list(title = "Date"),
     yaxis = list(title = "Average Precipitation (mm)"))
 ```
-
 

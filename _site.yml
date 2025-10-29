@@ -10,7 +10,7 @@ navbar:
       href: resume.html 
   right:
     - text: "Plot"
-      href: hw4_problem2.html
+      href: dashboard.html
     - icon: fa-github
       href: https://github.com/akacloud0429 
     - icon: fa-envelope
