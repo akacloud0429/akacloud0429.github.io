@@ -5,4 +5,20 @@ output: html_document
 
 [Homepage](index.html)
 
-Warning! More pictures on the way...
+More pictures loading...
+
+# Cautious! Glass Work:
+
+Glass Flower with Yellow, Blue, and White Leaves:
+![](images/glass_flower1.JPG)
+
+My friend made the beautiful flower, and I made the blue ice cube in the middle of the flower:
+![](images/glass_flower2.JPG)
+
+And here's a Halloween Version of Ice Cube:
+
+![](images/ice_cube.jpg)
+
+# Beautiful pics:
+
+
