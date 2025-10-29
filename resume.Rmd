@@ -4,7 +4,7 @@ output: html_document
 
 [Return to Homepage](index.html)
 
-Proof I've done stuff (aka Resume) here.
+**Proof I've done stuff (aka Resume) here.**
 
 ![](resume/page1.jpg)
 ![](resume/page2.jpg)

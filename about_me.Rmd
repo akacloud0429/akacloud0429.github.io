@@ -30,16 +30,14 @@ Color also plays a huge part in what catches me.
 
 ![](cameras/van1.JPG)
 
+<img src="cameras/van2.jpg" style="width: 500px; height: auto;">
 
-![](cameras/van2.jpg)
+<img src="cameras/leaves.JPG" style="width: 500px; height: auto;">
 
-![](cameras/leaves.JPG)
+<img src="cameras/japan2.jpg" style="width: 500px; height: auto;">
 
-![](cameras/japan2.jpg)
+<img src="cameras/japan3.jpg" style="width: 500px; height: auto;">
 
-![](cameras/japan3.jpg)
-
-![](cameras/japan4.jpg)
-
+<img src="cameras/japan4.jpg" style="width: 500px; height: auto;">
 
 

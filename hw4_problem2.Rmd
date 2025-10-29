@@ -7,10 +7,18 @@ output: html_document
 
 first we load all necessary libraries
 ```{r message=FALSE}
-library(flexdashboard)
 library(tidyverse)
 library(plotly)
 library(p8105.datasets)
-library(lubridate)
 ```
+
+# Problem2
+
+```{r}
+
+```
+
+
+
+
 

@@ -1,15 +1,16 @@
 name: "Hola!"
 output_dir: "."
 navbar:
-  title: "Luyun"
   left:
+    - icon: fa-whiteboard fa-semibold fa-house
+      href: index.html
     - text: "Fun Facts about ME!"
       href: about_me.html 
     - text: "Resume"
       href: resume.html 
-    - text: "Problem2"
-      href: hw4_problem2.html
   right:
+    - text: "Plot"
+      href: hw4_problem2.html
     - icon: fa-github
       href: https://github.com/akacloud0429 
     - icon: fa-envelope
